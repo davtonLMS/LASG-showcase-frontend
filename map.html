@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/lagos-logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+
+    <!-- Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+	<title>Lagos State Infrastructure Showcase</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="px-120 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/lagos-logo.png" class="mr-4" width="70">
+                <span class="d-none d-md-inline-flex font-12">Lagos State Infrastructure Showcase</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-lg-3">
+                        <a class="nav-link" href="about.html">About Lagos</a>
+                    </li>
+                    <li class="nav-item ml-lg-3">
+                        <a class="nav-link" href="map.html">Projects</a>
+                    </li>
+                    <li class="nav-item ml-lg-3">
+                        <a class="nav-link" href="locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item ml-lg-5 d-flex align-self-md-center mt-2 mt-md-0">
+                        <a href="" class="text-dark"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    	<!-- Preview Area -->
+    	<section class="preview px-120 py-5 bg-dark text-white">
+    		<div class="w-100 mx-0">
+    			<div class="row mx-0">
+    				<div class="col-md-8">
+    					<ul class="list-unstyled d-flex align-items-center">
+    						<li class="mx-3"><a class="text-white" href="index.html"><i class="fa fa-arrow-left"></i></a></li>
+    						<li class="mx-3"><a class="text-orange" href=""><i class="fa fa-map-marked-alt font-20 mr-1"></i> Map</a></li>
+    					</ul>
+    				</div>
+
+    				<div class="col-md-4 text-right">
+    					<ul class="list-unstyled">
+    						<!-- <li><a class="text-white" href=""><i class="fa fa-search mr-1"></i> Search</a></li> -->
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<!-- Preview Area -->
+    	<section class="preview px-120 py-5 bg-dark text-white">
+    		<div class="w-100 mx-0">
+    			<div class="row mx-0 align-items-center">
+    				<div class="col-lg-4 col-md-6 font-bold mb-3 order-2 order-md-1">Suggestions based on your Location</div>
+    				<div class="col-lg-8 col-md-6 order-1 order-md-2">
+    					<ul class="list-unstyled w-100 d-lg-flex align-items-center justify-content-lg-end">
+    						<li class="mr-3 mb-3"><i class="fa fa-filter mr-1"></i> Filter by:</li>
+    						<li class="mr-3 mb-3 text-dark">
+    							<select class="form-control callMap">
+    								<option selected="">Local Government</option>
+									<option>Agege</option>
+							        <option>Ajeromi-Ifelodun</option>
+							        <option>Alimosho</option>
+							        <option>Amuwo-Odofin</option>
+							        <option>Apapa</option>
+							        <option>Badagry</option>
+							        <option>Epe</option>
+							        <option>Eti Osa</option>
+							        <option>Ibeju-Lekki</option>
+							        <option>Ifako-Ijaiye</option>
+							        <option>Ikeja</option>
+							        <option>Ikorodu</option>
+							        <option>Kosofe</option>
+							        <option>Lagos Island</option>
+							        <option>Lagos Mainland</option>
+							        <option>Mushin</option>
+							        <option>Ojo</option>
+							        <option>Oshodi-Isolo</option>
+							        <option>Shomolu</option>
+							        <option>Surulere</option>
+								</select>
+    						</li>
+    						<li class="mr-3 mb-3 text-dark">
+    							<select class="form-control callMap">
+    								<option selected="">Ministry</option>
+    								<option>Health</option>
+								  	<option>Science and Technology</option>
+								  	<option>Works</option>
+								</select>
+    						</li>
+    						<li class="mr-3 mb-3 text-dark">
+    							<select class="form-control callMap">
+    								<option selected="">Themes Agenda</option>
+    								<option> Traffic Management and Transportation</option>
+    								<option> Health and Environment</option>
+    								<option> Education and Technology</option>
+    								<option> Making Lagos a 21st Century Economy</option>
+    								<option> Entertainment and Tourism</option>
+    								<option> Security and Governance</option>
+								</select>
+    						</li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<!-- Map Area -->
+    	<section class="map-area position-relative">
+    		<div id="map" class="w-100" style="height: 700px;"></div>
+    		<div id="error" class="w-100" style="display:none;background: rgba(0,0,0,0.7); color: #fff; height: 700px;position: absolute;bottom: 0;">
+	    		<div class="h-100 d-flex align-items-center justify-content-center">
+	    			<h2 class="text-center font-bold">No Project Yet</h2>
+	    		</div>
+	    	</div>
+
+	    	<div class="nearest-project position-absolute top-0 mt-3 px-4 d-none d-md-block">
+		    	<a href="preview.html" class="thumnail col-md-9 col-lg-11 mb-2">
+					<div class="thumnail-location d-flex p-4 px-5 rounded">
+						<div><i class="fa fa-map-marker-alt mr-2"></i></div>
+						<div class="">
+							<div class="p-0 mb-3">Ikoyi Comprehensive High School</div>
+							<div class="p-0">G.R.A Ikoyi, Arena Busstop, Lagos,Nigeria</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="preview.html" class="thumnail col-md-9 col-lg-11 mb-2">
+					<div class="thumnail-location d-flex p-4 px-5 rounded">
+						<div><i class="fa fa-map-marker-alt mr-2"></i></div>
+						<div class="">
+							<div class="p-0 mb-3">Ikoyi Comprehensive High School</div>
+							<div class="p-0">G.R.A Ikoyi, Arena Busstop, Lagos,Nigeria</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="preview.html" class="thumnail col-md-9 col-lg-11 mb-2">
+					<div class="thumnail-location d-flex p-4 px-5 rounded">
+						<div><i class="fa fa-map-marker-alt mr-2"></i></div>
+						<div class="">
+							<div class="p-0 mb-3">Ikoyi Comprehensive High School</div>
+							<div class="p-0">G.R.A Ikoyi, Arena Busstop, Lagos,Nigeria</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="preview.html" class="thumnail col-md-9 col-lg-11 mb-2">
+					<div class="thumnail-location d-flex p-4 px-5 rounded">
+						<div><i class="fa fa-map-marker-alt mr-2"></i></div>
+						<div class="">
+							<div class="p-0 mb-3">Ikoyi Comprehensive High School</div>
+							<div class="p-0">G.R.A Ikoyi, Arena Busstop, Lagos,Nigeria</div>
+						</div>
+					</div>
+				</a>
+
+				<div>
+	    			<div class="col-lg-12 rounded-bottom px-0">
+		    			<input type="text" class="form-control py-3 text-center border-1" placeholder="Find a project near you" style="height: 42px;border: 1px solid #000">
+		    		</div>
+		    	</div>
+	    	</div>
+
+	    	<div class="search-nearest position-absolute bottom-0 mb-3">
+	    	</div>
+    	</section><!-- Trust the process -->
+		<section class="news text-white py-120 px-120 position-relative" style="background: #2b2a29">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+				preserveAspectRatio="none" fill="#2b2a29">
+				<path
+					d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+					class="shape-fill"></path>
+			</svg>
+			<div class="ring1 position-absolute d-none d-lg-block"><img src="img/ring1.svg" class="w-100"></div>
+			<div class="ring2 position-absolute d-none d-lg-block"><img src="img/ring2.svg" class="w-100"></div>
+			<div class="leaf position-absolute d-none d-md-block"><img src="img/Image 8.svg" class="w-100"></div>
+			<div class="arm position-absolute d-none d-md-block"><img src="img/463fec22798547af4168d54fe33e59ed.svg"
+					class="w-100"></div>
+			<div class="stad position-absolute d-none d-lg-block"><img src="img/stad.png" class="w-100"></div>
+			<div class="eko position-absolute d-none d-md-block"><img src="img/city.png" class="w-100"></div>
+			<div class="px-0 px-lg-5 py-0 py-lg-5">
+				<div class="row d-block d-lg-flex align-items-center px-lg-5 px-0 mx-auto bdf justify-content-center">
+					<div class="col-lg-5 text-left my-3">
+						<h4 class="font-30 font-mont font-bold">x x x</h4>
+						<h4 class="font-30 font-mont font-bold">Be a part of the conversation and give your opinions on
+							projects around you</h4>
+					</div>
+					<div class="col-lg-7 text-center my-3" style="max-width: 500px">
+						<h5 class="text-left mb-3">Latest News</h5>
+						<div class="card mb-3 border-0 text-dark text-left d-card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="img/news-1.png" class="card-img">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title mb-3 font-16 font-bold"><i
+												class="fa fa-square mr-4 text-orange"></i> 3rd Mainland bridge</h5>
+										<p class="card-text font-12">The Strategic Bridge Linking the 3rd Mainland</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-right mt-4">
+							<a href="" class="text-white font-16">Read more <i class="fa fa-arrow-right ml-2"></i></a>
+						</div>
+					</div>
+					<div class="text-left">
+						<a href="" class="text-white font-16 p-3"
+							style="background: url(img/btn-wave.svg) no-repeat; background-size: contain; background-position: center;">Join
+							the Conversation <i class="fa fa-arrow-right ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+
+    <footer class="px-120 py-3 bg-white position-relative">
+    	<div class="row d-flex justify-content-between align-items-center">
+    		<div class="col-lg-6 my-3 my-lg-0 text-center text-lg-left">
+    			<a class="" href="#">
+				  	<img src="img/lagos-logo.png" class="mr-4" width="80">
+				  	<span class="font-20 text-dark font-thin d-none d-md-inline-flex">Lagos State Infrastructure Showcase</span>
+				</a>
+    		</div>
+    		<div class="col-lg-6 my-3 my-lg-0 d-block d-md-flex justify-content-center justify-content-lg-end align-items-center">
+    			<ul class="foot-links list-unstyled d-flex mx-2 justify-content-lg-center mb-5 my-lg-0 text-center">
+    				<li>Copyright ©2021</li>
+    				<li><a href="#">Back to Top</a></li>
+    				<li><a href="#">Privacy Policy</a></li>
+    			</ul>
+    			<ul class="social-media list-unstyled d-flex mx-2 justify-content-center mb-5 my-lg-0">
+    				<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+    				<li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+    				<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+    			</ul>
+    		</div>
+    	</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+	<script src="js/main.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('.callMap').select2();
+    	$('.gm-style-iw-c .button').html('jvhvj');
+    	})
+
+
+		let markers = {
+	  		'Agege' : [{
+		  		'center' : {lat: 6.5355, lng: 3.3087},
+		  		'data' : [
+		  			{
+			  			coords: {lat: 6.5377, lng: 3.3077},
+			  			content: '<h1>Mushin</h1>'
+			  		},
+			  		{
+			  			coords: {lat: 6.5355, lng: 3.3087},
+			  			content: '<h1>Oshodi</h1>'
+			  		},
+			  		{
+			  			coords: {lat: 6.5366, lng: 3.3099},
+			  			content: '<h1>Ikeja</h1>'
+			  		}
+			  	]
+			}],
+			'Alimosho' : [{
+		  		'center' : {lat: 6.5355, lng: 3.3087},
+		  		'data' : [
+		  			{
+			  			coords: {lat: 6.5244, lng: 3.3792},
+			  			content: '<h1>Mushin</h1>'
+			  		},
+			  		{
+			  			coords: {lat: 6.5355, lng: 3.3087},
+			  			content: '<h1>Oshodi</h1>'
+			  		},
+			  		{
+			  			coords: {lat: 6.6018, lng: 3.3515},
+			  			content: '<h1>Ikeja</h1>'
+			  		}
+			  	]
+			}],
+	  	}
+
+		$('.callMap').on('change', function(){
+			$('#error').hide();
+			let lga = $(this).find(':selected').val();
+			if(markers[lga]){
+				info = markers[lga];
+				showMap(info[0]);
+			}
+			else if (lga=='Local Government' || lga=='Ministry' || lga=='Themes Agenda'){
+				initMap();
+			}
+			else{
+				$('#error').show();
+				initMap();
+			}
+		});
+
+    	function showMap(props) {
+    		console.log(props.center);
+			// Map Options
+			let options = {
+			  center: props.center,
+			  zoom: 16,
+			  minZoom: 16,
+			  mapTypeId: 'hybrid',
+			  clickableIcons: false,
+			  mapTypeControl: false
+			};
+
+			// New Map
+		  	let map = new google.maps.Map(document.getElementById("map"), options);
+
+		  	if(props.data) {
+		  		for (m of props.data){
+			  		addMarker(m)
+			  	}
+		  	}
+
+		  	// Add Marker Function
+		  	function addMarker(props) {
+		  		let marker = new google.maps.Marker({
+			  		position: props.coords,
+			  		map: map
+			  	});
+
+			  	// if(props.iconImage) {
+			  	// 	marker.setIcon(props.iconImage);
+			  	// }
+			  	// else {
+			  	// 	marker.setIcon('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AMap_marker.svg&psig=AOvVaw2z8rNNGNw6TaXkEI3DgB8n&ust=1619630460821000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLicreb3nvACFQAAAAAdAAAAABAD');
+			  	// }
+
+			  	if(props.content) {
+			  		// Info Window
+				  	let infoWindow = new google.maps.InfoWindow({
+				  		content : `
+				  			<button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; top: 10px; right: 10px;"><i class="fa fa-times font-20 text-white"></i>
+				  			</button>
+				  			<a href="preview.html" class="thumnail w-100">
+		    					<div class="thumnail-location d-flex p-4">
+		    						<div><i class="fa fa-map-marker-alt mr-2"></i></div>
+		    						<div class="">
+			    						<div class="p-0 mb-3 font-16 font-mont">Ikoyi Comprehensive High School</div>
+			    						<div class="p-0 font-16 font-mont">G.R.A Ikoyi, Arena Busstop, Lagos,Nigeria</div>
+			    					</div>
+		    					</div>
+		    				</a>
+		    			`
+				  	});
+
+				  	marker.addListener('click', function(){
+				  		infoWindow.open(map, marker);
+				  	});
+			  	}
+		  	}
+		}
+
+		function initMap() {
+
+			// Map Options
+			let options = {
+			  center: {lat: 6.5244, lng: 3.3792},
+			  zoom: 9,
+			  minZoom: 11,
+			  mapTypeId: 'hybrid',
+			  mapTypeControl: false
+			};
+
+			// New Map
+		  	let map = new google.maps.Map(document.getElementById("map"), options);
+		}
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcOQn17gBC7MJHsAqu5OGPg9Z0EVyO2uI&callback=initMap"
+      async
+    ></script>
+</body>
+</html>
